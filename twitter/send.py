@@ -7,3 +7,5 @@ api = tweepy.API(auth)
 
 message = "Hello"
 api.update_status(status=message)
+
+print('Message sent')

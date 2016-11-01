@@ -10,6 +10,6 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 myStreamListener = MyStreamListener()
-myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener())
+myStream = tweepy.Stream(auth=api.auth, listener=myStreamListener)
 
-myStream.filter(track=['python'])
+myStream.filter(track=['good'], async=True)
